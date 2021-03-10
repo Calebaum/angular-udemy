@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
 @Component({
   selector: 'menu',
@@ -6,13 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-  public testeTexto:string;
+
+  public texto:string
   constructor() { }
 
-  ngOnInit(): void {
-    this.testeTexto="Olá tudo bem ?"
+  ngOnInit() {
+    this.texto = "Olá tudo bem?"
   }
+
   clicou(){
-    this.testeTexto="CLICOU"
+    this.texto = "Clicou"
   }
+
 }
